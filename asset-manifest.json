@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MinhTuongLe/Portfolio_Upgrade/static/css/main.45f0465e.css",
+    "main.js": "/MinhTuongLe/Portfolio_Upgrade/static/js/main.42ed2163.js",
+    "static/media/background.png": "/MinhTuongLe/Portfolio_Upgrade/static/media/background.d86af22760ab40198bf4.png",
+    "index.html": "/MinhTuongLe/Portfolio_Upgrade/index.html",
+    "main.45f0465e.css.map": "/MinhTuongLe/Portfolio_Upgrade/static/css/main.45f0465e.css.map",
+    "main.42ed2163.js.map": "/MinhTuongLe/Portfolio_Upgrade/static/js/main.42ed2163.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45f0465e.css",
+    "static/js/main.42ed2163.js"
+  ]
+}
