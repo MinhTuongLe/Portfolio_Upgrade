@@ -1,6 +1,6 @@
 import HomeContent from "./HomeContent";
 import React from "react";
-import "./style.css";
+import "./style.scss";
 import { useState } from "react";
 import contents from "./Database";
 
