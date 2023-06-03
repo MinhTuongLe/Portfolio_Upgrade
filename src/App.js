@@ -1,20 +1,21 @@
 import HomeContent from "./HomeContent";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./style.scss";
-import { useState } from "react";
 import contents from "./Database";
 
 const App = () => {
   const [activeButtonIndex, setActiveButtonIndex] = useState(0);
+  const [key, setKey] = useState(0);
 
   const handleClick = (index) => {
     setActiveButtonIndex(index);
+    setKey((prevKey) => prevKey + 1);
   };
 
   return (
     <>
       <header className="header">
-        <span className="logo">LeMinhTuong</span>
+        <span className="logo" key={key}>LeMinhTuong</span>
 
         <nav className="navbar">
           <button
@@ -44,20 +45,20 @@ const App = () => {
         </nav>
       </header>
 
-      <div className="home">
+      <div className="home" key={key}>
         {<HomeContent content={contents[activeButtonIndex]} />}
         <div className="home-sci">
           <a href="https://www.facebook.com/CallMeConal.mrT.091202/">
             {" "}
             <i className="bx bxl-facebook"></i>
           </a>
-          <a href="https://www.linkedin.com/in/l%C3%AA-minh-t%C6%B0%E1%BB%9Dng-70bb0726a/">
+          <a href="https://www.linkedin.com/in/leminhtuong09122002/">
             {" "}
             <i className="bx bxl-linkedin"></i>
           </a>
           <a href="https://github.com/MinhTuongLe">
             {" "}
-            <i class="bx bxl-github"></i>
+            <i className="bx bxl-github"></i>
           </a>
         </div>
       </div>

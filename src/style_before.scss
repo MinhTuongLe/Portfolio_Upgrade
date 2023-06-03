@@ -1,4 +1,4 @@
-@mixin before {
+@mixin before ($animationDelay, $zIndex: null) {
     content: "";
     position: absolute;
     top: 0;
@@ -7,6 +7,10 @@
     height: 100%;
     background-color: #081b29;
     animation: showRight 1s ease forwards;
+    animation-delay: $animationDelay;
+    @if $zIndex != null  {
+      z-index: $zIndex;
+    }
 }
 
 /* KEYFRAMES ANIMATION */
